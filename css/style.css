@@ -423,17 +423,17 @@ body {
     font-size: 1.4rem; }
 
 .project {
-  padding: 10rem 0px;
-  clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+  padding: 10rem 4rem;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   background-color: #fbfbfb; }
   .project__info {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
     padding: 2rem;
-    font-size: 1.6rem;
     color: #fff; }
     @media (max-width: 600px) {
       .project__info {
@@ -441,17 +441,23 @@ body {
         background-image: linear-gradient(to left bottom, #4d8ae6, #11284b);
         padding: 1rem; } }
   .project__container {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto; }
     .project__container--link {
-      text-decoration: none; }
+      text-decoration: none;
+      display: block;
+      width: 100%; }
     .project__container--card {
       position: relative;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.3);
-      margin: 5rem 0;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      width: 30%;
+      height: auto; }
       .project__container--card:hover {
         transform: scale(1.02); }
     .project__container--img {

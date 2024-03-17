@@ -441,8 +441,8 @@ body {
 /// PROJECT
 
 .project{
-    padding: 10rem 0px;
-    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+    padding: 10rem 4rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     background-color: #fbfbfb;
     
     &__info {
@@ -450,9 +450,9 @@ body {
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.4rem;
         padding: 2rem;
-        font-size: 1.6rem;
         color: $color-white;
 
         @media (max-width: $media-phone) {
@@ -463,11 +463,16 @@ body {
     }
     
     &__container {        
-        width: 80%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 0 auto;
 
         &--link {
            text-decoration: none;
+           display: block;
+           width: 100%;
         }
 
         &--card {
@@ -475,9 +480,11 @@ body {
             overflow: hidden;
             border-radius: 10px;
             box-shadow: $box-shadow;
-            // margin-bottom: 60px;
-            margin: 5rem 0;
             transition: all 0.5s;
+
+            width: 30%;
+            height: auto;
+
             &:hover{
                 transform: scale(1.02);
             }
