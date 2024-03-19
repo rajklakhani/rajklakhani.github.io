@@ -16,17 +16,6 @@
         text-align: center;
         cursor: pointer;
         text-align: center;
-
-        // @include respond(tab-port) {
-        //     top: 4rem;
-        //     right: 4rem;
-        // }
-
-        // @include respond(phone) {
-        //     top: 3rem;
-        //     right: 3rem;
-        // }
-
     }
 
     &_background {
@@ -38,19 +27,7 @@
         right: 3.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
-        // transition: transform .8s cubic-bezier();
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-
-        // @include respond(tab-port) {
-        //     top: 4.5rem;
-        //     right: 4.5rem;
-        // }
-
-        // @include respond(phone) {
-        //     top: 3.5rem;
-        //     right: 3.5rem;
-        // }
-
 
     }
 
@@ -58,9 +35,9 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 1500;
-        overflow: hidden;
+        overflow: auto;
         
         width: 0;
         opacity: 0;
@@ -70,7 +47,7 @@
     &_list {
         list-style: none;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -100,34 +77,22 @@
             background-size: 230%;
             transition: all .4s;
             height: 0;
-
-            span {
-                margin-right: 1.5rem;
-                display: inline-block;
-            }
-
         }
 
         &:hover,
         &:active {
             background-position: 100%;
-            color: #23395b;
+            color: $color-primary;
             -webkit-transform: translateX(1rem);
             transform: translateX(1rem);
-            height: 100%;
+            height: fit-content;
         }
     }
 
 
     &_checkbox:checked~&_background {
-        transform: scale(40);
+        transform: scale(100);
     }
-
-    // &_checkbox:checked~&_link:link, &_link:visited {
-    //     display: inline-block;
-    //     font-size: 3rem;
-    //     padding: 1rem 2rem;
-    // }
 
     &_checkbox:checked~&_nav {
         opacity: 1;
@@ -147,7 +112,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color: #ddd;
+            background-color: $color-primary;
             display: inline-block;
         }
 

@@ -332,7 +332,7 @@ body {
     text-align: center;    
 
     &__container {
-        padding: 2rem 5rem;
+        padding: 10rem 5rem;
         font-size:2rem;
         line-height: 3;
     }
@@ -349,24 +349,27 @@ body {
         letter-spacing: 1px;
     }
 
-    &__hard--img {
-        width: 13rem;
-        aspect-ratio: 2 / 2;
-        padding: 1rem;
-        object-fit: contain;
-    
-         @media  (max-width: $media-phone) {
-             width: 9.5rem;
-             padding: 5px;
-         }
-}
+    &__h-s {
+        padding: 3rem 0;
+
+        &--img {
+            width: 13rem;
+            aspect-ratio: 1;
+            padding: 1rem;
+            margin: 1rem;
+            object-fit: contain;
+            
+            border-radius: 6px;
+            box-shadow: $box-shadow;
+            
+            @media  (max-width: $media-phone) {
+                width: 9.5rem;
+                padding: 5px;
+            }
+        }
+    }
     &__soft {
         margin-top: 3rem;
-
-        // &--list {
-        //     list-style: none;
-        // }
-
     }
     
 }
@@ -382,6 +385,7 @@ body {
         display: flex;
         justify-content: space-evenly;
         gap: 4rem;
+        padding: 5rem 0;
         align-items: center;
         
         @media (max-width: $media-tab) {
@@ -440,64 +444,153 @@ body {
 ////////////////////////////////////////
 /// PROJECT
 
-.project{
-    padding: 10rem 4rem;
+.project {
+    padding: 10rem 0;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-    background-color: #fbfbfb;
-    
-    &__info {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        font-size: 1.4rem;
-        padding: 2rem;
-        color: $color-white;
+    background-color: rgba($color-primary, .05);
 
-        @media (max-width: $media-phone) {
-            position: unset;
-            background-image: linear-gradient(to left bottom, $color-primary-light, $color-primary-dark);
-            padding: 1rem;
-        }
+    @media (max-width: $media-phone) {
+        clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
     }
-    
-    &__container {        
+
+
+    &__info  {
+        display: none;
+        position: absolute;
+        background-color: $color-primary;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto;
-
-        &--link {
-           text-decoration: none;
-           display: block;
-           width: 100%;
-        }
-
-        &--card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: $box-shadow;
-            transition: all 0.5s;
-
-            width: 30%;
-            height: auto;
-
-            &:hover{
-                transform: scale(1.02);
-            }
-        }
-
-        &--img{
-            width: 100%;
+        bottom: 0;
+        padding: 1.5rem;
+        color: $color-white;
+        font-size: 1.4rem;
+        z-index: 1;
+        
+        @media (max-width: $media-phone) {
             display: block;
         }
     }
+
+        
+
+    &__container {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5rem 0;
+        width: 95%;
+        transition: all .5s;
+
+        @media (max-width: $media-phone) {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+        &--card {
+            border-radius: 8px;
+            width: 33%;
+            height: 37rem;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            box-shadow: $box-shadow;
+            
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: fill;
+            
+            
+            @media (max-width: $media-phone) {
+                width: 75%;
+                height: 43rem;
+            }
+            
+            &::before {
+                content: "";
+                font-weight: 400;
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                height: 0%;
+                padding: 0 6px;
+                border-radius: 10px;
+                transition: all .5s;
+                font-size: 2rem;
+                color: $color-white;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                overflow: hidden;
+                z-index: 5;
+                border: 2px solid #ccc;
+                transform: scale(0);
+            }
+
+
+            &--1::before {
+                content: "HELLO NATURE";
+            }
+
+            &--2::before {
+                content: "HELLO Hotel";
+            }
+
+            &--3::before {
+                content: "HELLO NATURE";
+            }
+
+            &:hover::before {
+                height: fit-content;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1);
+
+                @media (max-width: $media-phone){
+                    display: none;
+                }
+            }
+
+            &:hover .project__container--hover, .project__container--card.tapped .project__container--hover {
+                height: 100%;
+                background-color: rgba($color-primary, .9);
+            }
+        }
+
+        &--link {
+            display: block;
+            height: 10%;
+        }
+
+        &--hover  {
+            height: 0%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all .5s;
+            position: absolute;
+            bottom: 0;
+            
+        }
+
+        &--img {
+            height: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            transition: all .4s;
+
+            &:hover {
+                transform: scale(1.3);
+                box-shadow: $box-shadow;
+                background-color: $color-primary-dark;
+            }
+        }
+    }
 }
-
-
+    
 ////////////////////////////////////// 
 /// FOOTER
 
