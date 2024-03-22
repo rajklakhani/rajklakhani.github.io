@@ -25,20 +25,21 @@
         <nav class="navigation_nav">
           <ul class="navigation_list">
 
-            <!-- <li class="navgation_item">
-                <a href="#" class="navigation_link">Home</a>
-              </li> -->
-
             <li class="navgation_item">
-              <a href="#" class="navigation_link">About</a>
+              <a href="#" class="navigation_link">Home</a>
             </li>
 
-            <!-- <li class="navgation_item">
-                <a href="#" class="navigation_link">Blog</a>
-              </li> -->
+            <li class="navgation_item">
+              <a href="#details" class="navigation_link">Academics</a>
+            </li>
+
 
             <li class="navgation_item">
               <a href="#skill" target="_self" class="navigation_link">Skills</a>
+            </li>
+
+            <li class="navgation_item">
+              <a href="#project" class="navigation_link">Portfolio</a>
             </li>
 
           </ul>
@@ -48,23 +49,27 @@
     </div>
 
     <div class="navi-fixed">
-      <ul class="navi-fixed__list">
-        <li class="navi-fixed__item navi-fixed__item--1">
-          <a href="#" class="navi-fixed__logo navi-fixed__link--1">Raj Lakhani</a>
-        </li>
-        <!-- <li class="navi-fixed__item navi-fixed__item--2">
-            <a href="#" class="navi-fixed__link navi-fixed__link--2">Home</a>
-          </li> -->
-        <li class="navi-fixed__item navi-fixed__item--3">
-          <a href="#" class="navi-fixed__link navi-fixed__link--3">About</a>
-        </li>
-        <!-- <li class="navi-fixed__item navi-fixed__item--4">
-            <a href="#" class="navi-fixed__link navi-fixed__link--4">Blog</a>
-          </li> -->
-        <li class="navi-fixed__item navi-fixed__item--5">
-          <a href="#skill" class="navi-fixed__link navi-fixed__link--5">Skills</a>
-        </li>
-      </ul>
+
+      <div class="navi-fixed__list">
+        <span class="navi-fixed__logo">
+          <a href="#" class="navi-fixed__link--1">Raj Lakhani</a></span>
+        <nav class="navi-fixed__list--nav">
+          <ul>
+            <li class="navi-fixed__item navi-fixed__item--2">
+              <a href="#" class="navi-fixed__link navi-fixed__link--2">Home</a>
+            </li>
+            <li class="navi-fixed__item navi-fixed__item--4">
+              <a href="#details" class="navi-fixed__link navi-fixed__link--4">Academics</a>
+            </li>
+            <li class="navi-fixed__item navi-fixed__item--3">
+              <a href="#skill" class="navi-fixed__link navi-fixed__link--3">Skills</a>
+            </li>
+            <li class="navi-fixed__item navi-fixed__item--5">
+              <a href="#project" class="navi-fixed__link navi-fixed__link--5">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <div class="bg__container">
@@ -116,9 +121,20 @@
               </svg>
             </a>
 
-            <a href="rajesh-kumar-fed.pdf" download="Raj-Lakhani" target="_blank" class="about__bio--link">
+            <a href="img/rajesh-kumar-fed.pdf" download="Raj-Lakhani-Resume" target="_blank" class="about__bio--link">
               <svg class="about__bio__icon--svg">
                 <use xlink:href="img/sprite.svg#icon-download3"></use>
+              </svg>
+            </a>
+            <a href="mailto:lakhanirajkumar178@gmail.com" target="_blank" class="about__bio--link">
+              <svg class="about__bio__icon--svg">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </a>
+
+            <a href="https://github.com/rajklakhani" target="_blank" class="about__bio--link">
+              <svg class="about__bio__icon--svg">
+                <use xlink:href="img/sprite.svg#icon-github-bk"></use>
               </svg>
             </a>
           </div>
@@ -128,23 +144,41 @@
 
     </section>
 
-    <section class="details">
-      <div class="academic">
-        <h3 class="heading--sub">Academic Details</h3>
-        <div class="academic__info">
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p><b>Institution:</b> Virtual Univerity</p>
-          <p><b>Year of Graduation:</b> 20XX</p>
-          <p><b>GPA:</b> 3.8/4.0</p>
+    <section id="details">
+      <div class="details">
+        <div class="details__column  column-1">
+          <h3 class="heading--sub">
+            <img src="img/SVG/graduation.svg" alt="Academics">Academics
+          </h3>
+          <ul class="details__list">
+            <li class="details__list--item">
+              <img src="img/SVG/vu-logo.svg" alt="V-U-logo">
+              BS in Computer Science
+            </li>
+            <li class="details__list--item subject">
+              <h4>
+                Major Subjects:
+              </h4>
+              <ul>
+                <li class="details__list--item li-01">Computer Programming</li>
+                <li class="details__list--item li-01">Object-Oriented Programming</li>
+                <li class="details__list--item li-01">Data Structures and Algorithms</li>
+                <li class="details__list--item li-01">Database Management Systems</li>
+                <li class="details__list--item li-01">Computer Architecture and Organization</li>
+
+              </ul>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="contact">
-        <h3 class="heading--sub">Contact Details</h3>
-        <div class="contact__info">
-          <p><b>Name:</b> Raj Lakhani</p>
-          <p><b>Email:</b> <a href="mailto:lakhanirajkumar178@gmail.com">lakhanirajkumar178@gmail.com</a></p>
-          <p><b>Phone:</b> +92 348-2489178</p>
-          <p><b>Address:</b> Clifton Karachi Pakistan</p>
+        <div class="details__column">
+          <h3 class="heading--sub"><img src="img/SVG/experience.svg" alt=""> Professional Experience</h3>
+          <h4>Frontend Developer at Global Management Consultants</h4>
+          <p><small>December/2023 - Present*</small></p>
+          <ul class="details__list pro-exper-list">
+            <li class="details__list--item li-01">Developing Responsive Webpages</li>
+            <li class="details__list--item li-01">CMS Development - PSD to HTML, XD to HTML</li>
+            <li class="details__list--item li-01">Dynamic the web contents using JQuery Ajax</li>
+          </ul>
         </div>
       </div>
 
@@ -186,8 +220,8 @@
       </div>
     </section>
 
-    <section class="project">
-      <h2 class="heading--secondary">Visit My Projects</h2>
+    <section class="project" id="project">
+      <h2 class="heading--secondary">Portfolio Projects</h2>
 
       <div class="project__container">
 
@@ -222,12 +256,27 @@
         </div>
 
         <div class="project__container--card project__container--card--3"
-          style="background-image: url(img/nat-3-large.jpg);">
+          style="background-image: url(img/laptop-shop.jpg);">
           <div class="project__info">
-            <p>Hello Nature</p>
+            <p>Laptop Shope</p>
           </div>
           <div class="project__container--hover">
-            <a href="img/hello-nature.png" target="_blank" class="project__container--link">
+            <a href="img/laptop-shop.jpg" target="_blank" class="project__container--link">
+              <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
+            </a>
+            <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
+              <img src="img/SVG/github.svg" alt="Show Image" class="project__container--img">
+            </a>
+          </div>
+        </div>
+
+        <div class="project__container--card project__container--card--4"
+          style="background-image: url(img/real-estate.jpg);">
+          <div class="project__info">
+            <p>Real Estat</p>
+          </div>
+          <div class="project__container--hover">
+            <a href="img/real-estate.jpg" target="_blank" class="project__container--link">
               <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
             </a>
             <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
@@ -246,29 +295,37 @@
   <footer class="footer">
 
     <div class="footer__icon">
-      <a href="https://www.linkedin.com/in/rajkumarlakhani/" target="_blank" class="footer__icon--link">
-        <svg class="footer__icon--svg">
-          <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
-        </svg>
-      </a>
+      <div class="about__bio__icon">
+        <a href="https://www.linkedin.com/in/rajkumarlakhani/" target="_blank" class="about__bio--link">
+          <svg class="about__bio__icon--svg">
+            <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+          </svg>
+        </a>
 
-      <a href="https://www.facebook.com/profile.php?id=100086185850656" target="_blank" class="footer__icon--link">
-        <svg class="footer__icon--svg">
-          <use xlink:href="img/sprite.svg#icon-facebook1"></use>
-        </svg>
-      </a>
+        <a href="https://www.facebook.com/profile.php?id=100086185850656" target="_blank" class="about__bio--link">
+          <svg class="about__bio__icon--svg">
+            <use xlink:href="img/sprite.svg#icon-facebook1"></use>
+          </svg>
+        </a>
 
-      <a href="https://www.instagram.com/lakhanirajkumar178/" target="_blank" class="footer__icon--link">
-        <svg class="footer__icon--svg">
-          <use xlink:href="img/sprite.svg#icon-instagram"></use>
-        </svg>
-      </a>
+        <a href="https://www.instagram.com/lakhanirajkumar178/" target="_blank" class="about__bio--link">
+          <svg class="about__bio__icon--svg">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
 
-      <a href="https://twitter.com/RajeshK88800" target="_blank" class="footer__icon--link">
-        <svg class="footer__icon--svg">
-          <use xlink:href="img/sprite.svg#icon-x"></use>
-        </svg>
-      </a>
+        <a href="https://twitter.com/RajeshK88800" target="_blank" class="about__bio--link">
+          <svg class="about__bio__icon--svg">
+            <use xlink:href="img/sprite.svg#icon-x"></use>
+          </svg>
+        </a>
+
+        <a href="https://github.com/rajklakhani" target="_blank" class="about__bio--link">
+          <svg class="about__bio__icon--svg">
+            <use xlink:href="img/sprite.svg#icon-github-bk"></use>
+          </svg>
+        </a>
+      </div>
     </div>
 
     <p class="footer__copyright">&copy; 2024 all right reserved</p>
