@@ -6,76 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="img/Rajesh-lakhani-favicon.png" type="image/x-icon">
-  <title>Raj Lakhani</title>
+  <title>Raj Lakhani Portfolio</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="navigation-phone">
-      <div class="navigation">
-
-        <input type="checkbox" class="navigation_checkbox" id="navi-toggle" />
-
-        <label for="navi-toggle" class="navigation_button">
-          <span class="navigation_icon">&nbsp;</span>
-        </label>
-
-        <div class="navigation_background">&nbsp;</div>
-
-        <nav class="navigation_nav">
-          <ul class="navigation_list">
-
-            <li class="navgation_item">
-              <a href="#" class="navigation_link">Home</a>
-            </li>
-
-            <li class="navgation_item">
-              <a href="#details" class="navigation_link">Academics</a>
-            </li>
-
-
-            <li class="navgation_item">
-              <a href="#skill" target="_self" class="navigation_link">Skills</a>
-            </li>
-
-            <li class="navgation_item">
-              <a href="#project" class="navigation_link">Portfolio</a>
-            </li>
-
-          </ul>
-        </nav>
-
-      </div>
-    </div>
-
     <div class="navi-fixed">
-
       <div class="navi-fixed__list">
         <span class="navi-fixed__logo">
-          <a href="#" class="navi-fixed__link--1">Raj Lakhani</a></span>
+        </span>
         <nav class="navi-fixed__list--nav">
-          <ul>
-            <li class="navi-fixed__item navi-fixed__item--2">
-              <a href="#" class="navi-fixed__link navi-fixed__link--2">Home</a>
-            </li>
-            <li class="navi-fixed__item navi-fixed__item--4">
-              <a href="#details" class="navi-fixed__link navi-fixed__link--4">Academics</a>
-            </li>
-            <li class="navi-fixed__item navi-fixed__item--3">
-              <a href="#skill" class="navi-fixed__link navi-fixed__link--3">Skills</a>
-            </li>
-            <li class="navi-fixed__item navi-fixed__item--5">
-              <a href="#project" class="navi-fixed__link navi-fixed__link--5">Portfolio</a>
-            </li>
+          <ul id="navList">
           </ul>
         </nav>
       </div>
     </div>
+    <button id="menu-icon" class="menu-icon">&#9776;</button>
 
     <div class="bg__container">
-      <video autoplay="" muted="" loop="" preload="auto" class="bg__container--video">
-        <source src="img/bg-video3.mp4" type="video/mp4" />
-      </video>
     </div>
 
   </header>
@@ -83,65 +31,14 @@
   <main>
     <section class="about">
       <div class="about__container">
-
         <div class="about__profile">
-          <img src="img/Rajesh-lakhani-1.png" alt="Raj Lakhani" class="about__profile--img" />
         </div>
 
         <div class="about__bio">
-          <span class="about__bio--work">Frontend Developer</span>
-          <h2 class="about__bio--name">Raj Lakhani</h2>
-          <p class="about__bio--text"> Welcome to my portfolio! I am a passionate frontend developer with experience in
-            HTML, CSS, JavaScript, SASS, Bootstrap, React.js and Node.js. I love
-            building responsive and user-friendly web applications.
-          </p>
-
-          <div class="about__bio__icon">
-            <a href="https://www.linkedin.com/in/rajkumarlakhani/" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
-              </svg>
-            </a>
-
-            <a href="https://www.facebook.com/profile.php?id=100086185850656" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-facebook1"></use>
-              </svg>
-            </a>
-
-            <a href="https://www.instagram.com/lakhanirajkumar178/" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-
-            <a href="https://twitter.com/RajeshK88800" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-x"></use>
-              </svg>
-            </a>
-
-            <a href="img/rajesh-kumar-fed.pdf" download="Raj-Lakhani-Resume" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-download3"></use>
-              </svg>
-            </a>
-            <a href="mailto:lakhanirajkumar178@gmail.com" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </a>
-
-            <a href="https://github.com/rajklakhani" target="_blank" class="about__bio--link">
-              <svg class="about__bio__icon--svg">
-                <use xlink:href="img/sprite.svg#icon-github-bk"></use>
-              </svg>
-            </a>
-          </div>
-
+          <div class="about__bio--text"></div>
+          <div class="about__bio__icon"></div>
         </div>
       </div>
-
     </section>
 
     <section id="details">
@@ -156,66 +53,43 @@
               BS in Computer Science
             </li>
             <li class="details__list--item subject">
-              <h4>
-                Major Subjects:
-              </h4>
-              <ul>
-                <li class="details__list--item li-01">Computer Programming</li>
-                <li class="details__list--item li-01">Object-Oriented Programming</li>
-                <li class="details__list--item li-01">Data Structures and Algorithms</li>
-                <li class="details__list--item li-01">Database Management Systems</li>
-                <li class="details__list--item li-01">Computer Architecture and Organization</li>
-
-              </ul>
+              <h4 class="subject-heading"></h4>
+              <ul class="sublist"></ul>
             </li>
           </ul>
         </div>
         <div class="details__column">
           <h3 class="heading--sub"><img src="img/SVG/experience.svg" alt=""> Professional Experience</h3>
-          <h4>Frontend Developer at Global Management Consultants</h4>
-          <p><small>December/2023 - Present*</small></p>
+          <h4 class="experience-subhead"></h4>
+          <p class="duration"></p>
           <ul class="details__list pro-exper-list">
-            <li class="details__list--item li-01">Developing Responsive Webpages</li>
-            <li class="details__list--item li-01">CMS Development - PSD to HTML, XD to HTML</li>
-            <li class="details__list--item li-01">Dynamic the web contents using JQuery Ajax</li>
           </ul>
         </div>
       </div>
-
     </section>
 
     <section class="skills__container" id="skill">
       <h2 class="heading--secondary">Skills</h2>
-
       <div class="skills">
         <h3 class="skills__heading--sub">Hard Skills</h3>
         <div class="skills__h-s">
-          <div class="skills__h-s--img skills__h-s--img-1"><img src="img/SVG/html.svg" alt="HTML5"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-2"><img src="img/SVG/css.svg" alt="CSS3"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-3"><img src="img/SVG/js.svg" alt="Java Script"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-4"><img src="img/SVG/sass.svg" alt="SASS"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-5"><img src="img/SVG/react.svg" alt="React"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-6"><img src="img/SVG/node.svg" alt="Node.Js"></img></div>
+          <div class="skills__h-s--img skills__h-s--img-1"></div>
+          <div class="skills__h-s--img skills__h-s--img-2"></div>
+          <div class="skills__h-s--img skills__h-s--img-3"></div>
+          <div class="skills__h-s--img skills__h-s--img-4"></div>
+          <div class="skills__h-s--img skills__h-s--img-5"></div>
+          <div class="skills__h-s--img skills__h-s--img-6"></div>
         </div>
 
         <h3 class="skills__heading--sub">Soft Skills</h3>
         <div class="skills__h-s">
-          <div class="skills__h-s--img skills__h-s--img-7"><img class="soft-sk" src="img/SVG/adaptability.svg"
-              alt="Adaptability"></img>
+          <div class="skills__h-s--img skills__h-s--img-7">
           </div>
-          <div class="skills__h-s--img skills__h-s--img-8"><img class="soft-sk" src="img/SVG/empathy.svg"
-              alt="Empathy"></img></div>
-          <div class="skills__h-s--img skills__h-s--img-9"><img class="soft-sk" src="img/SVG/collaboration.svg"
-              alt="Collaboration"></img>
-          </div>
-          <div class="skills__h-s--img skills__h-s--img-10"><img class="soft-sk" src="img/SVG/communication.svg"
-              alt="Communication"></img>
-          </div>
-          <div class="skills__h-s--img skills__h-s--img-11"><img class="soft-sk" src="img/SVG/confidence.svg"
-              alt="Confidence"></img>
-          </div>
-          <div class="skills__h-s--img skills__h-s--img-12"><img class="soft-sk" src="img/SVG/problem-solving.svg"
-              alt="Problem-solving"></img></div>
+          <div class="skills__h-s--img skills__h-s--img-8"></div>
+          <div class="skills__h-s--img skills__h-s--img-9"></div>
+          <div class="skills__h-s--img skills__h-s--img-10"></div>
+          <div class="skills__h-s--img skills__h-s--img-11"></div>
+          <div class="skills__h-s--img skills__h-s--img-12"></div>
         </div>
       </div>
     </section>
@@ -224,114 +98,166 @@
       <h2 class="heading--secondary">Portfolio Projects</h2>
 
       <div class="project__container">
-
-        <div class="project__container--card project__container--card--1"
-          style="background-image: url(img/hello-nature.png);">
-          <div class="project__info">
-            <p>Hello Nature</p>
-          </div>
-          <div class="project__container--hover">
-            <a href="img/hello-nature.png" target="_blank" class="project__container--link">
-              <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
-            </a>
-            <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
-              <img src="img/SVG/github.svg" alt="Show Image" class="project__container--img">
-            </a>
-          </div>
+        <div class="project__container--card project__container--card--1">
         </div>
-
-        <div class="project__container--card project__container--card--2"
-          style="background-image: url(img/hello-hotel.png);">
-          <div class="project__info">
-            <p>Hello Hotel</p>
-          </div>
-          <div class="project__container--hover">
-            <a href="img/hello-hotel.png" target="_blank" class="project__container--link">
-              <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
-            </a>
-            <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
-              <img src="img/SVG/github.svg" alt="Show Image" class="project__container--img">
-            </a>
-          </div>
+        <div class="project__container--card project__container--card--2">
         </div>
-
-        <div class="project__container--card project__container--card--3"
-          style="background-image: url(img/laptop-shop.jpg);">
-          <div class="project__info">
-            <p>Laptop Shope</p>
-          </div>
-          <div class="project__container--hover">
-            <a href="img/laptop-shop.jpg" target="_blank" class="project__container--link">
-              <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
-            </a>
-            <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
-              <img src="img/SVG/github.svg" alt="Show Image" class="project__container--img">
-            </a>
-          </div>
+        <div class="project__container--card project__container--card--3">
         </div>
-
-        <div class="project__container--card project__container--card--4"
-          style="background-image: url(img/real-estate.jpg);">
-          <div class="project__info">
-            <p>Real Estat</p>
-          </div>
-          <div class="project__container--hover">
-            <a href="img/real-estate.jpg" target="_blank" class="project__container--link">
-              <img src="img/SVG/eye.svg" alt="Show Image" class="project__container--img">
-            </a>
-            <a href="https://github.com/rajklakhani/hello-nature.git" target="_blank" class="project__container--link">
-              <img src="img/SVG/github.svg" alt="Show Image" class="project__container--img">
-            </a>
-          </div>
+        <div class="project__container--card project__container--card--4">
         </div>
-
       </div>
 
     </section>
-
-
   </main>
 
   <footer class="footer">
 
     <div class="footer__icon">
-      <div class="about__bio__icon">
-        <a href="https://www.linkedin.com/in/rajkumarlakhani/" target="_blank" class="about__bio--link">
-          <svg class="about__bio__icon--svg">
-            <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
-          </svg>
-        </a>
-
-        <a href="https://www.facebook.com/profile.php?id=100086185850656" target="_blank" class="about__bio--link">
-          <svg class="about__bio__icon--svg">
-            <use xlink:href="img/sprite.svg#icon-facebook1"></use>
-          </svg>
-        </a>
-
-        <a href="https://www.instagram.com/lakhanirajkumar178/" target="_blank" class="about__bio--link">
-          <svg class="about__bio__icon--svg">
-            <use xlink:href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-
-        <a href="https://twitter.com/RajeshK88800" target="_blank" class="about__bio--link">
-          <svg class="about__bio__icon--svg">
-            <use xlink:href="img/sprite.svg#icon-x"></use>
-          </svg>
-        </a>
-
-        <a href="https://github.com/rajklakhani" target="_blank" class="about__bio--link">
-          <svg class="about__bio__icon--svg">
-            <use xlink:href="img/sprite.svg#icon-github-bk"></use>
-          </svg>
-        </a>
-      </div>
     </div>
+    <span class="footer__copyright"></span>
 
-    <p class="footer__copyright">&copy; 2024 all right reserved</p>
+
 
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $.getJSON("data.json", function (webData) {
+        const { navbar, heroSection, academics, skills, projects, footer } = webData;
+
+        renderNavBar(navbar);
+
+        renderHeroSection(heroSection);
+
+        renderAcademics(academics);
+
+        renderSkillsSection(skills);
+
+        renderProjectsSection(projects);
+
+        renderFooter(footer);
+
+      }).fail(function () {
+        console.log("An error has occurred.");
+      });
+
+      $("#menu-icon").on("click", function () {
+        $(".navi-fixed").toggleClass("active");
+      });
+    });
+
+    function renderNavBar(navbar) {
+      const { logo } = navbar;
+
+      $(".navi-fixed__logo").append(`<a href="#" class="navi-fixed__link--1">${logo.name}</a>`)
+
+      if (Array.isArray(navbar.navItems) && navbar.navItems.length) {
+
+        navbar.navItems.forEach(navItem => {
+          $("#navList").append(`<li class="navi-fixed__item">
+              <a href="${navItem.path}" class="navi-fixed__link">${navItem.name}</a>
+            </li>`)
+
+        });
+      }
+    }
+
+    function renderHeroSection(heroSection) {
+      const { videoPath, name, designation, profileSummary, socialIcons } = heroSection;
+
+      $(".bg__container").append(`<video autoplay="" muted="" loop="" preload="auto" class="bg__container--video">
+        <source src=${heroSection.videoPath} type="video/mp4" /></video>`)
+
+      $(".about__profile").append(`<img src=${heroSection.profile.path} alt=${heroSection.profile.name} class="about__profile--img" />`)
+      $(".about__bio").append(`<span class="about__bio--work">${heroSection.designation}</span>`)
+      $(".about__bio").append(`<h2 class="about__bio--name">${heroSection.name}</h2>`)
+      $(".about__bio").append(`<p class="about__bio--text">${heroSection.profileSummary}</h2>`)
+
+
+      if (Array.isArray(heroSection.socialIcons) && heroSection.socialIcons.length) {
+
+        heroSection.socialIcons.forEach(socialIcons => {
+          $(".about__bio__icon").append(`<a href="${socialIcons.link}"" target="_blank">
+              <svg class="about__bio__icon--svg">${socialIcons.path}</svg>
+            </a>`)
+        });
+      }
+    }
+
+    function renderAcademics(academics) {
+      const { name, subject, job_title, duration, experience } = academics;
+      $(".subject-heading").append(`${academics.name}`)
+
+      if (Array.isArray(academics.subject) && academics.subject.length) {
+        academics.subject.forEach(subject => {
+          $(".sublist").append(`<li class="details__list--item li-01">${subject.name}</li>`)
+        })
+      }
+
+      $(".experience-subhead").append(`${academics.job_title}`)
+      $(".duration").append(`<small>${academics.duration}</small>`)
+
+      if (Array.isArray(academics.experience) && academics.experience.length) {
+        academics.experience.forEach(experience => {
+          $(".pro-exper-list").append(`<li class="details__list--item li-01">${experience.name}</li>`)
+        })
+      }
+    }
+
+    function renderSkillsSection(skills) {
+      const { hardSkills, softSkills } = skills;
+      if (Array.isArray(skills.hardSkills) && skills.hardSkills.length) {
+        skills.hardSkills.forEach((hardSkills, index) => {
+          $(`.skills__h-s--img.skills__h-s--img-${index + 1}`).append(`<img src=${hardSkills.imagePath} alt=${hardSkills.name}></img>`)
+        })
+      }
+      if (Array.isArray(skills.softSkills) && skills.softSkills.length) {
+        skills.softSkills.forEach((softSkills, index) => {
+          $(`.skills__h-s--img.skills__h-s--img-${index + 7}`).append(`<img class="soft-sk" src=${softSkills.imagePath} alt=${softSkills.name}></img>`)
+        })
+      }
+    }
+
+    function renderProjectsSection(projects) {
+      const { project } = projects;
+
+      if (Array.isArray(projects.project) && projects.project.length) {
+        projects.project.forEach((project, index) => {
+          $(`.project__container--card.project__container--card--${index + 1}`).css("background-image", `url(${project.imagePath})`).append(`<div class="project__info">
+            <p>${project.name}</p>
+          </div>
+          <div class="project__container--hover">
+            <a href=${project.imagePath} target="_blank" class="project__container--link">
+              <img src=${project.eyeIconPath} alt="Show Image" class="project__container--img">
+            </a>
+            <a href=${project.githubPath} target="_blank" class="project__container--link">
+              <img src=${project.githubIconPath} alt="Show Image" class="project__container--img">
+            </a>
+          </div>`);
+        });
+      }
+
+    }
+
+    function renderFooter(footer) {
+      const { name, socialIcons2 } = footer;
+
+      if (Array.isArray(socialIcons2) && socialIcons2.length) {
+        socialIcons2.forEach(socialIcons2 => {
+          $(".footer__icon").append(`<a href="${socialIcons2.link}" target="_blank">
+          <svg class="about__bio__icon--svg">${socialIcons2.path}</svg></a>`);
+        });
+      }
+      $(".footer__copyright").append(`<p>${name}</p>`);
+    }
+
+
+  </script>
 </body>
 
 </html>

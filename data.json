@@ -1,0 +1,220 @@
+{
+  "navbar": {
+    "logo": {
+      "path": "",
+      "name": "Raj Lakhani",
+      "link": ""
+    },
+    "navItems": [
+      {
+        "name": "Home",
+        "id": "home",
+        "path": ""
+      },
+      {
+        "name": "Academics",
+        "id": "details",
+        "path": ""
+      },
+      {
+        "name": "Skills",
+        "id": "skill",
+        "path": ""
+      },
+      {
+        "name": "Portfolio",
+        "id": "project",
+        "path": ""
+      }
+    ]
+  },
+  "heroSection": {
+    "profile": {
+      "path": "img/Rajesh-lakhani-1.png",
+      "name": "Raj Lakhani"
+    },
+    "videoPath": "img/bg-video3.mp4",
+    "name": "Raj Lakhani",
+    "designation": "Frontend Developer",
+    "profileSummary": "Welcome to my portfolio! I am a passionate frontend developer with experience in HTML, CSS, JavaScript, SASS, Bootstrap, React.js and Node.js. I love building responsive and user-friendly web applications.",
+    "socialIcons": [
+      {
+        "link": "https://www.linkedin.com/in/rajkumarlakhani/",
+        "path": "<use xlink:href='img/sprite.svg#icon-linkedin2'></use>"
+      },
+      {
+        "link": "https://www.facebook.com/profile.php?id=100086185850656",
+        "path": "<use xlink:href='img/sprite.svg#icon-facebook1'></use>"
+      },
+      {
+        "link": "https://www.instagram.com/lakhanirajkumar178/",
+        "path": "<use xlink:href='img/sprite.svg#icon-instagram'></use>"
+      },
+      {
+        "link": "https://twitter.com/RajeshK88800",
+        "path": "<use xlink:href='img/sprite.svg#icon-x'></use>"
+      },
+      {
+        "link": "img/rajesh-kumar-fed.pdf",
+        "download": "Raj-Lakhani-Resume",
+        "path": "<use xlink:href='img/sprite.svg#icon-download3'></use>"
+      },
+      {
+        "link": "mailto:lakhanirajkumar178@gmail.com",
+        "path": "<use xlink:href='img/sprite.svg#icon-mail'></use>"
+      },
+      {
+        "link": "https://github.com/rajklakhani",
+        "path": "<use xlink:href='img/sprite.svg#icon-github-bk'></use>"
+      }
+    ]
+  },
+
+  "academics": {
+    "name": "Major Subjects:",
+    "subject": [
+      {
+        "name": "Computer Programming"
+      },
+      {
+        "name": "Object-Oriented Programming"
+      },
+      {
+        "name": "Data Structures and Algorithms"
+      },
+      {
+        "name": "Database Management Systems"
+      },
+      {
+        "name": "Computer Architecture and Organization"
+      }
+    ],
+    "job_title": "Frontend Developer at Global Management Consultants",
+    "duration": "December/2023 - Present*",
+    "experience": [
+      {
+        "name": "Developing Responsive Webpages"
+      },
+      {
+        "name": "CMS Development - PSD to HTML, XD to HTML"
+      },
+      {
+        "name": "Dynamic the web contents using JQuery Ajax"
+      }
+    ]
+  },
+
+  "skills": {
+    "hardSkills": [
+      {
+        "imagePath": "img/SVG/html.svg",
+        "name": "HTML5"
+      },
+      {
+        "imagePath": "img/SVG/css.svg",
+        "name": "CSS3"
+      },
+      {
+        "imagePath": "img/SVG/js.svg",
+        "name": "Java Script"
+      },
+      {
+        "imagePath": "img/SVG/sass.svg",
+        "name": "SASS"
+      },
+      {
+        "imagePath": "img/SVG/react.svg",
+        "name": "React"
+      },
+      {
+        "imagePath": "img/SVG/node.svg",
+        "name": "Node.Js"
+      }
+    ],
+    "softSkills": [
+      {
+        "imagePath": "img/SVG/adaptability.svg",
+        "name": "Adaptability"
+      },
+      {
+        "imagePath": "img/SVG/empathy.svg",
+        "name": "Empathy"
+      },
+      {
+        "imagePath": "img/SVG/collaboration.svg",
+        "name": "Collaboration"
+      },
+      {
+        "imagePath": "img/SVG/communication.svg",
+        "name": "Communication"
+      },
+      {
+        "imagePath": "img/SVG/confidence.svg",
+        "name": "Confidence"
+      },
+      {
+        "imagePath": "img/SVG/problem-solving.svg",
+        "name": "Problem-solving"
+      }
+    ]
+  },
+
+  "projects": {
+    "project": [
+      {
+        "name": "Hello Nature",
+        "imagePath": "img/hello-nature.png",
+        "githubPath": "https://github.com/rajklakhani/hello-nature.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Hello Hotel",
+        "imagePath": "img/hello-hotel.png",
+        "github": "https://github.com/rajklakhani/hello-hotel.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Laptop Shop",
+        "imagePath": "img/laptop-shop.jpg",
+        "github": "https://github.com/rajklakhani/laptop-shop.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Real Estate",
+        "imagePath": "img/real-estate.jpg",
+        "github": "https://github.com/rajklakhani/real-estate.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      }
+    ]
+  },
+
+  "footer": {
+    "name": "&copy; 2024 all right reserved",
+    "socialIcons2": [
+      {
+        "link": "https://www.linkedin.com/in/rajkumarlakhani/",
+        "path": "<use xlink:href='img/sprite.svg#icon-linkedin2'></use>"
+      },
+      {
+        "link": "https://www.facebook.com/profile.php?id=100086185850656",
+        "path": "<use xlink:href='img/sprite.svg#icon-facebook1'></use>"
+      },
+      {
+        "link": "https://www.instagram.com/lakhanirajkumar178/",
+        "path": "<use xlink:href='img/sprite.svg#icon-instagram'></use>"
+      },
+      {
+        "link": "https://twitter.com/RajeshK88800",
+        "path": "<use xlink:href='img/sprite.svg#icon-x'></use>"
+      },
+      {
+        "link": "https://github.com/rajklakhani",
+        "path": "<use xlink:href='img/sprite.svg#icon-github-bk'></use>"
+      }
+    ]
+  }
+}

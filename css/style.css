@@ -23,7 +23,7 @@
   position: fixed;
   top: 3.5rem;
   right: 3.5rem;
-  background-image: radial-gradient(#23395b, #11284b);
+  background-image: radial-gradient(#8bb9fd, #11284b);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -162,39 +162,28 @@ body {
   height: 7rem;
   box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.3);
   z-index: 10; }
-  @media (max-width: 800px) {
-    .navi-fixed {
-      display: none; } }
-  .navi-fixed__list ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    flex: 1 0 60%; }
   .navi-fixed__list {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     list-style: none;
     height: 100%;
     background-color: #23395b;
     font-size: 1.6rem; }
     .navi-fixed__list--nav {
-      flex: 1 0 60%; }
-  .navi-fixed__item {
-    align-self: center; }
-    .navi-fixed__item--1 {
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 2rem; }
+      flex: 1 0 25%;
+      padding-right: 2rem; }
+  .navi-fixed__list #navList {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; }
   .navi-fixed__logo {
-    flex: 40%;
-    padding-left: 3vw;
+    flex: 0 45%;
+    padding-left: 3.5rem;
     font-weight: 800;
     font-size: 1.8rem; }
   .navi-fixed__link {
     text-decoration: none;
     color: #fff;
-    display: block;
     transition: all 0.4s; }
     .navi-fixed__link--1 {
       text-decoration: none;
@@ -294,6 +283,7 @@ main {
     .about__bio__icon {
       display: flex;
       gap: 1rem;
+      order: 1;
       margin: 1rem 0; }
       @media (max-width: 320px) {
         .about__bio__icon {
@@ -325,10 +315,6 @@ main {
       @media (max-width: 320px) {
         .about__bio--text {
           font-size: 1.4em; } }
-    .about__bio--link {
-      height: fit-content;
-      width: fit-content;
-      transition: all 0.3s; }
 
 .navigation-phone {
   display: none; }
@@ -340,7 +326,7 @@ main {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  background-image: linear-gradient(to right bottom, #11284b, #23395b);
+  background-image: linear-gradient(to right bottom, #11284b, #8bb9fd);
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -588,7 +574,7 @@ main {
         left: 0%;
         height: 0%;
         padding: 0 6px;
-        border-radius: 10px;
+        border-radius: 5px;
         transition: all 0.5s;
         font-size: 2rem;
         color: #fff;
@@ -605,7 +591,7 @@ main {
       .project__container--card--2::before {
         content: "HELLO Hotel"; }
       .project__container--card--3::before {
-        content: "Laptop Shope"; }
+        content: "Laptop Shop"; }
       .project__container--card--4::before {
         content: "Real Estate"; }
       .project__container--card:hover::before {
@@ -655,7 +641,9 @@ main {
       flex-direction: column; } }
   .footer__icon {
     width: 75%;
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    display: flex;
+    gap: 1rem; }
     @media (max-width: 800px) {
       .footer__icon {
         width: auto; } }
@@ -664,3 +652,31 @@ main {
     font-size: 1.2rem;
     text-align: center;
     color: #ccc; }
+
+.navi-fixed.navi-fixed__list {
+  margin-right: 20px; }
+
+.navi-fixed.navi-fixed__list:last-child {
+  margin-right: 0; }
+
+.menu-icon {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .navi-fixed {
+    display: none; }
+  .menu-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+    top: 5rem;
+    right: 5rem; }
+  .navi-fixed.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    /* Adjust as per your layout */
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9; } }
