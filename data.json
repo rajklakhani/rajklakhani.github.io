@@ -164,7 +164,7 @@
       {
         "name": "Hello Nature",
         "imagePath": "img/hello-nature.png",
-        "githubPath": "https://github.com/rajklakhani/hello-nature.git",
+        "github": "https://github.com/rajklakhani/hello-nature.git",
         "eyeIconPath": "img/SVG/eye.svg",
         "githubIconPath": "img/SVG/github.svg"
       },
@@ -186,6 +186,20 @@
         "name": "Real Estate",
         "imagePath": "img/real-estate.jpg",
         "github": "https://github.com/rajklakhani/real-estate.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Level Up",
+        "imagePath": "img/level-up.png",
+        "github": "https://github.com/rajklakhani/level-up.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Creative Connections",
+        "imagePath": "img/creative.png",
+        "github": "https://github.com/rajklakhani/creative-connections.git",
         "eyeIconPath": "img/SVG/eye.svg",
         "githubIconPath": "img/SVG/github.svg"
       }

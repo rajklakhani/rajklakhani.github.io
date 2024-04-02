@@ -161,7 +161,10 @@ body {
   width: 100vw;
   height: 7rem;
   box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.3);
-  z-index: 10; }
+  z-index: 4; }
+  @media (max-width: 600px) {
+    .navi-fixed {
+      height: 10rem; } }
   .navi-fixed__list {
     display: flex;
     align-items: center;
@@ -169,9 +172,16 @@ body {
     height: 100%;
     background-color: #23395b;
     font-size: 1.6rem; }
+    @media (max-width: 600px) {
+      .navi-fixed__list {
+        flex-direction: column;
+        gap: 1rem; } }
     .navi-fixed__list--nav {
       flex: 1 0 25%;
       padding-right: 2rem; }
+      @media (max-width: 600px) {
+        .navi-fixed__list--nav {
+          width: 90%; } }
   .navi-fixed__list #navList {
     display: flex;
     justify-content: space-around;
@@ -181,9 +191,14 @@ body {
     padding-left: 3.5rem;
     font-weight: 800;
     font-size: 1.8rem; }
+    @media (max-width: 600px) {
+      .navi-fixed__logo {
+        padding-top: 1.5rem;
+        padding-left: 0; } }
   .navi-fixed__link {
     text-decoration: none;
     color: #fff;
+    position: relative;
     transition: all 0.4s; }
     .navi-fixed__link--1 {
       text-decoration: none;
@@ -191,9 +206,40 @@ body {
       border: 1px solid;
       border-radius: 4px;
       padding: 2px 8px; }
-    .navi-fixed__link:hover {
-      text-decoration: underline;
-      text-underline-offset: 2px; }
+    .navi-fixed__link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      opacity: 0;
+      border: 1px solid;
+      transition: all 0.3s;
+      height: 0; }
+    .navi-fixed__link:hover::after {
+      width: 100%;
+      opacity: 1; }
+
+.menu-icon {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .navi-fixed {
+    display: none; }
+  .menu-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+    top: 3rem;
+    right: 3rem; }
+  .navi-fixed.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9; } }
 
 main {
   background-color: #f0f8ff; }
@@ -270,13 +316,9 @@ main {
     color: #eee;
     animation-name: moveInRight;
     animation-duration: 2s; }
-    @media (max-width: 1200px) {
-      .about__bio {
-        display: block; } }
     @media (max-width: 800px) {
       .about__bio {
-        width: 90%;
-        display: block; } }
+        width: 90%; } }
     @media (max-width: 600px) {
       .about__bio {
         padding: 2rem; } }
@@ -594,6 +636,10 @@ main {
         content: "Laptop Shop"; }
       .project__container--card--4::before {
         content: "Real Estate"; }
+      .project__container--card--5::before {
+        content: "Level Up"; }
+      .project__container--card--6::before {
+        content: "Creative Connections"; }
       .project__container--card:hover::before {
         height: fit-content;
         top: 50%;
@@ -652,31 +698,3 @@ main {
     font-size: 1.2rem;
     text-align: center;
     color: #ccc; }
-
-.navi-fixed.navi-fixed__list {
-  margin-right: 20px; }
-
-.navi-fixed.navi-fixed__list:last-child {
-  margin-right: 0; }
-
-.menu-icon {
-  display: none; }
-
-@media screen and (max-width: 600px) {
-  .navi-fixed {
-    display: none; }
-  .menu-icon {
-    display: inline-block;
-    position: fixed;
-    z-index: 5;
-    top: 5rem;
-    right: 5rem; }
-  .navi-fixed.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    /* Adjust as per your layout */
-    left: 0;
-    width: 100%;
-    background-color: #f9f9f9; } }
