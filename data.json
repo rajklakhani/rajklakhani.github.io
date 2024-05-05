@@ -14,17 +14,17 @@
       {
         "name": "Academics",
         "id": "details",
-        "path": ""
+        "path": "#details"
       },
       {
         "name": "Skills",
         "id": "skill",
-        "path": ""
+        "path": "#skill"
       },
       {
         "name": "Portfolio",
         "id": "project",
-        "path": ""
+        "path": "#project"
       }
     ]
   },
@@ -197,9 +197,23 @@
         "githubIconPath": "img/SVG/github.svg"
       },
       {
+        "name": "Rubicon Consulting",
+        "imagePath": "img/rubicon-consulting.png",
+        "github": "https://github.com/rajklakhani/rubicon-consulting.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
         "name": "Creative Connections",
         "imagePath": "img/creative.png",
         "github": "https://github.com/rajklakhani/creative-connections.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Registration Form",
+        "imagePath": "img/registration-form.png",
+        "github": "https://github.com/rajklakhani/registration-form.git",
         "eyeIconPath": "img/SVG/eye.svg",
         "githubIconPath": "img/SVG/github.svg"
       }

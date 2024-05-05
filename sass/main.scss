@@ -152,7 +152,7 @@ body {
   .navi-fixed.active {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -681,7 +681,7 @@ main {
         align-content: center;
         text-align: center;
         overflow: hidden;
-        z-index: 5;
+        z-index: 1;
         border: 2px solid #ccc;
         transform: scale(0);
       }
@@ -691,7 +691,7 @@ main {
       }
 
       &--2::before {
-        content: "HELLO Hotel";
+        content: "HELLO HOTEL";
       }
 
       &--3::before {
@@ -704,7 +704,13 @@ main {
         content: "Level Up";
       }
       &--6::before {
+        content: "Rubicon Consulting";
+      }
+      &--7::before {
         content: "Creative Connections";
+      }
+      &--8::before {
+        content: "Registration Form";
       }
 
       &:hover::before {
