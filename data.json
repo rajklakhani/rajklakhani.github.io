@@ -71,24 +71,7 @@
   },
 
   "academics": {
-    "name": "Major Subjects:",
-    "subject": [
-      {
-        "name": "Computer Programming"
-      },
-      {
-        "name": "Object-Oriented Programming"
-      },
-      {
-        "name": "Data Structures and Algorithms"
-      },
-      {
-        "name": "Database Management Systems"
-      },
-      {
-        "name": "Computer Architecture and Organization"
-      }
-    ],
+    "name": "Studying",
     "job_title": "Frontend Developer at Global Management Consultants",
     "duration": "December/2023 - Present*",
     "experience": [
