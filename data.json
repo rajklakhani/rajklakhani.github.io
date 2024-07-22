@@ -2,7 +2,7 @@
   "navbar": {
     "logo": {
       "path": "",
-      "name": "Raj Lakhani",
+      "name": "Rajesh Lakhani",
       "link": ""
     },
     "navItems": [
@@ -31,10 +31,10 @@
   "heroSection": {
     "profile": {
       "path": "img/Rajesh-lakhani-1.png",
-      "name": "Raj Lakhani"
+      "name": "Rajesh Lakhani"
     },
     "videoPath": "img/bg-video3.mp4",
-    "name": "Raj Lakhani",
+    "name": "Rajesh Lakhani",
     "designation": "Frontend Developer",
     "profileSummary": "Welcome to my portfolio! I am a passionate frontend developer with experience in HTML, CSS, JavaScript, SASS, Bootstrap, React.js and Node.js. I love building responsive and user-friendly web applications.",
     "socialIcons": [
@@ -55,7 +55,7 @@
         "path": "<use xlink:href='img/sprite.svg#icon-x'></use>"
       },
       {
-        "link": "img/rajesh-kumar-fed.pdf",
+        "link": "img/rajesh-lakhani.pdf",
         "download": "Raj-Lakhani-Resume",
         "path": "<use xlink:href='img/sprite.svg#icon-download3'></use>"
       },
@@ -72,7 +72,7 @@
 
   "academics": {
     "name": "Studying",
-    "job_title": "Frontend Developer at Global Management Consultants",
+    "job_title": "Frontend Developer at ABTACH Ltd",
     "duration": "December/2023 - Present*",
     "experience": [
       {
@@ -112,6 +112,10 @@
       {
         "imagePath": "img/SVG/node.svg",
         "name": "Node.Js"
+      },
+      {
+        "imagePath": "img/SVG/wordpress-simple.svg",
+        "name": "WordPress"
       }
     ],
     "softSkills": [
@@ -197,6 +201,13 @@
         "name": "Registration Form",
         "imagePath": "img/registration-form.png",
         "github": "https://github.com/rajklakhani/registration-form.git",
+        "eyeIconPath": "img/SVG/eye.svg",
+        "githubIconPath": "img/SVG/github.svg"
+      },
+      {
+        "name": "Spotlight Salon & SPA",
+        "imagePath": "img/spotlight.png",
+        "github": "https://www.spotlightsalon.com.pk/",
         "eyeIconPath": "img/SVG/eye.svg",
         "githubIconPath": "img/SVG/github.svg"
       }

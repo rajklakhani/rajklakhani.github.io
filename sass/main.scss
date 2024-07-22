@@ -108,10 +108,10 @@ body {
 
     &--1 {
       text-decoration: none;
-      color: $color-white;
-      border: 1px solid;
-      border-radius: 4px;
+      color: #fff;
+      text-transform: uppercase;
       padding: 2px 8px;
+      text-shadow: 5px 10px 5px #7c8fab;
     }
     &::after {
       content: "";
@@ -462,22 +462,25 @@ main {
         content: "NODE.js";
       }
       &-7::after {
-        content: "Adaptability";
+        content: "Wordpress";
       }
       &-8::after {
-        content: "Empathy";
+        content: "Adaptability";
       }
       &-9::after {
-        content: "Collaboration";
+        content: "Empathy";
       }
       &-10::after {
+        content: "Collaboration";
+      }
+      &-11::after {
         content: "Communication";
         font-size: 1.4rem;
       }
-      &-11::after {
+      &-12::after {
         content: "Confidence";
       }
-      &-12::after {
+      &-13::after {
         content: "Problem solving";
       }
 
@@ -600,7 +603,6 @@ main {
 .heading--sub {
   font-size: 2.4rem;
   margin: 1rem 0 3rem;
-  // line-height: 3;
 }
 
 .icon {
@@ -608,7 +610,6 @@ main {
   height: 1.6rem;
   margin-right: 8px;
   fill: currentColor;
-  /* Adjust icon color */
 }
 
 ////////////////////////////////////////
@@ -711,6 +712,9 @@ main {
       }
       &--8::before {
         content: "Registration Form";
+      }
+      &--9::before {
+        content: "Spotlight Salon & SPA";
       }
 
       &:hover::before {

@@ -79,17 +79,18 @@
           <div class="skills__h-s--img skills__h-s--img-4"></div>
           <div class="skills__h-s--img skills__h-s--img-5"></div>
           <div class="skills__h-s--img skills__h-s--img-6"></div>
+          <div class="skills__h-s--img skills__h-s--img-7"></div>
         </div>
 
         <h3 class="skills__heading--sub">Soft Skills</h3>
         <div class="skills__h-s">
-          <div class="skills__h-s--img skills__h-s--img-7">
-          </div>
+          <!-- <div class="skills__h-s--img skills__h-s--img-7"></div> -->
           <div class="skills__h-s--img skills__h-s--img-8"></div>
           <div class="skills__h-s--img skills__h-s--img-9"></div>
           <div class="skills__h-s--img skills__h-s--img-10"></div>
           <div class="skills__h-s--img skills__h-s--img-11"></div>
           <div class="skills__h-s--img skills__h-s--img-12"></div>
+          <div class="skills__h-s--img skills__h-s--img-13"></div>
         </div>
       </div>
     </section>
@@ -113,6 +114,8 @@
         <div class="project__container--card project__container--card--7">
         </div>
         <div class="project__container--card project__container--card--8">
+        </div>
+        <div class="project__container--card project__container--card--9">
         </div>
       </div>
 
@@ -222,11 +225,12 @@
       if (Array.isArray(skills.hardSkills) && skills.hardSkills.length) {
         skills.hardSkills.forEach((hardSkills, index) => {
           $(`.skills__h-s--img.skills__h-s--img-${index + 1}`).append(`<img src=${hardSkills.imagePath} alt=${hardSkills.name}></img>`)
+          console.log(index);
         })
       }
       if (Array.isArray(skills.softSkills) && skills.softSkills.length) {
         skills.softSkills.forEach((softSkills, index) => {
-          $(`.skills__h-s--img.skills__h-s--img-${index + 7}`).append(`<img class="soft-sk" src=${softSkills.imagePath} alt=${softSkills.name}></img>`)
+          $(`.skills__h-s--img.skills__h-s--img-${index + 8}`).append(`<img class="soft-sk" src=${softSkills.imagePath} alt=${softSkills.name}></img>`)
         })
       }
     }

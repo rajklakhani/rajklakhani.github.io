@@ -203,9 +203,9 @@ body {
     .navi-fixed__link--1 {
       text-decoration: none;
       color: #fff;
-      border: 1px solid;
-      border-radius: 4px;
-      padding: 2px 8px; }
+      text-transform: uppercase;
+      padding: 2px 8px;
+      text-shadow: 5px 10px 5px #7c8fab; }
     .navi-fixed__link::after {
       content: "";
       position: absolute;
@@ -462,17 +462,19 @@ main {
       .skills__h-s--img-6::after {
         content: "NODE.js"; }
       .skills__h-s--img-7::after {
-        content: "Adaptability"; }
+        content: "Wordpress"; }
       .skills__h-s--img-8::after {
-        content: "Empathy"; }
+        content: "Adaptability"; }
       .skills__h-s--img-9::after {
-        content: "Collaboration"; }
+        content: "Empathy"; }
       .skills__h-s--img-10::after {
+        content: "Collaboration"; }
+      .skills__h-s--img-11::after {
         content: "Communication";
         font-size: 1.4rem; }
-      .skills__h-s--img-11::after {
-        content: "Confidence"; }
       .skills__h-s--img-12::after {
+        content: "Confidence"; }
+      .skills__h-s--img-13::after {
         content: "Problem solving"; }
       .skills__h-s--img:hover::after {
         opacity: 1; }
@@ -644,6 +646,8 @@ main {
         content: "Creative Connections"; }
       .project__container--card--8::before {
         content: "Registration Form"; }
+      .project__container--card--9::before {
+        content: "Spotlight Salon & SPA"; }
       .project__container--card:hover::before {
         height: fit-content;
         top: 50%;
