@@ -36,7 +36,7 @@
     "videoPath": "img/bg-video3.mp4",
     "name": "Rajesh Lakhani",
     "designation": "Frontend Developer",
-    "profileSummary": "Welcome to my portfolio! I am a passionate frontend developer with experience in HTML, CSS, JavaScript, SASS, Bootstrap, React.js and Node.js. I love building responsive and user-friendly web applications.",
+    "profileSummary": "Welcome to my portfolio! I am a passionate frontend developer with experience in HTML, CSS, JavaScript, SASS, Bootstrap, React.js and OOP. I love building responsive and user-friendly web applications.",
     "socialIcons": [
       {
         "link": "https://www.linkedin.com/in/rajkumarlakhani/",
@@ -69,11 +69,10 @@
       }
     ]
   },
-
   "academics": {
     "name": "Studying",
-    "job_title": "Frontend Developer at ABTACH Ltd",
-    "duration": "December/2023 - Present*",
+    "job_title": "Frontend Developer at CodeAlpha",
+    "duration": "September/2023 - Present*",
     "experience": [
       {
         "name": "Developing Responsive Webpages"
@@ -86,7 +85,6 @@
       }
     ]
   },
-
   "skills": {
     "hardSkills": [
       {
@@ -108,10 +106,6 @@
       {
         "imagePath": "img/SVG/react.svg",
         "name": "React"
-      },
-      {
-        "imagePath": "img/SVG/node.svg",
-        "name": "Node.Js"
       },
       {
         "imagePath": "img/SVG/wordpress-simple.svg",
@@ -145,7 +139,6 @@
       }
     ]
   },
-
   "projects": {
     "project": [
       {
@@ -213,7 +206,6 @@
       }
     ]
   },
-
   "footer": {
     "name": "&copy; 2024 all right reserved",
     "socialIcons2": [
