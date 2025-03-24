@@ -71,14 +71,14 @@
   },
   "academics": {
     "name": "Studying",
-    "job_title": "Frontend Developer at CodeAlpha",
-    "duration": "September/2023 - Present*",
+    "job_title": "WordPress & Shopify Developer at Liquid Technologies ",
+    "duration": "Feb/2025 - Present*",
     "experience": [
       {
         "name": "Developing Responsive Webpages"
       },
       {
-        "name": "CMS Development - PSD to HTML, XD to HTML"
+        "name": "CMS Development - PSD/Figma to WordPress,"
       },
       {
         "name": "Dynamic the web contents using JQuery Ajax"
@@ -110,6 +110,10 @@
       {
         "imagePath": "img/SVG/wordpress-simple.svg",
         "name": "WordPress"
+      },
+      {
+        "imagePath": "img/SVG/shopify.svg",
+        "name": "Shopify"
       }
     ],
     "softSkills": [

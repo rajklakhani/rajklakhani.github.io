@@ -649,6 +649,10 @@ main {
   content: "Wordpress";
 }
 
+.skills__h-s--img-7::after {
+  content: "Shopify";
+}
+
 .skills__h-s--img-8::after {
   content: "Adaptability";
 }
